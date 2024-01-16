@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    padding-left: 1.5em;
+    
+}
+h1 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+}
+h3 {
+    font-size: 36px;
+    font-weight: 800;
+}
+.primary-color{
+    color: #FF5400;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary{
+    background-color: #FF5400;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 15px;
+        width: 174px;
+        border-radius: 41px;
+        border: white;
+        text-align: center;
+        justify-content: center;
+}
+.input-primary{
+    color: rgba(19, 19, 24, 0.50);
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 0.8em;
+border-radius: 8px;
+border-style: none;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #424247;
+
+}
+#logo{
+    width: 48px;
+    height: 56px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    font-size: 18px;
+}
+
+nav li{
+    list-style: none;
+    margin-left: 10px;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.banner{
+    background-image: url('../Images/Rectangle\ 11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5em;
+    padding-bottom: 19em;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-description{
+    font-size: 16px;
+        font-weight: 400;
+}
+.banner-input{
+    width: 60%;
+    border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.30);
+        display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            align-items: center;
+            padding: 20px;
+}
