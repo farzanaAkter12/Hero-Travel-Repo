@@ -10,16 +10,15 @@ main{
 padding-left: 1.5em;
 }
 h1 {
-    font-size: 64px;
     font-style: normal;
     font-weight: 800;
 }
 h3 {
     font-size: 36px;
     font-weight: 800;
+    
 }
 h6{
-    color: #131318;
         font-size: 24px;
         font-weight: 800;
         margin-top: 0px;
@@ -93,12 +92,14 @@ nav li a{
     text-decoration: none;
     font-size: 16px;
 }
+.toggle-bar{
+    display: none;
+}
 .banner{
     background-image: url('../Images/Rectangle\ 11.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
-
+   width: 100%;
     padding: 5em 1.5em;
     text-align: center;
     color: white;
@@ -123,11 +124,13 @@ nav li a{
             padding: 20px;
 }
 .Popular-tour-section{
+    width: 100%;
     justify-content: center;
     align-items: flex-start;
     gap: 24px;
     margin-top: 100px;
 }
+
 .destination-section{
     display: flex;
     flex-direction: column;
@@ -143,7 +146,7 @@ nav li a{
    margin-top: 24px;
    margin-bottom: 24px;
    color: #FFF;
-
+   
     font-size: 28px;
     font-weight: 800;
     
@@ -165,6 +168,7 @@ height: 100%;
 
 }
 .centered-text{
+  
     text-align: center;
     margin-bottom: 100px;
 }
@@ -180,6 +184,9 @@ height: 100%;
     height: 64px;
     width: 64px;
    margin-bottom:0px;
+}
+.box h6{
+    color: #424247;
 }
 .box1{
     border: 1px solid rgba(251, 181, 99, 0.20);
@@ -200,7 +207,7 @@ height: 100%;
     align-items: center;
 }
 .card-container{
-    margin-top: 50x;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
@@ -227,17 +234,22 @@ border-radius: 8px;
     margin-top: 120px;
     justify-content: center;
 }
+.hill-section img{
+    width: 100%;
+}
 .form-section{
 justify-content: center;
+align-items: center;
 margin-top: 120px;
 margin-bottom: 100px;
     gap: 24px;
-    flex: 1;
+   
 }
 .form-section-text{
     border-radius: 16px;
         border: 1px solid #FF5400;
         padding: 40px;
+        height: 100%;
 }
 hr {
     width: 100%;
@@ -264,19 +276,27 @@ hr {
 .form-section button{
     width: 100%;
 }
-.discount-box{
+.form-section img{
+    width: 100%;
+    height: 100%;
+}
+.discount-badge{
     background-color: #FF5400;
+    text-align: center;
     border-radius: 16px;
     width: 324px;
         height: 120px;
         transform: rotate(-19.628deg);
         padding: 50px;
         position: relative;
-        z-index: 1;
-        left: 2em;
+        left:  14em;
+        bottom: 17em;
 }
-.discount-box p,h6{
+.discount-badge p, h6{
     color:#FFFFFF;
+}
+.discount-badge h6{
+    margin: 0;
 }
 footer{
     width: 100%;
@@ -286,4 +306,71 @@ footer{
     flex-direction: column;
     align-items: center;
     padding-top: 150px;
+}
+
+
+@media only screen and (max-width:688px) {
+    nav ul{
+        display: none;
+    }
+        .toggle-bar {
+            display: block;
+        }
+                .toggle-bar:hover nav ul{
+                            display:flex;
+                            flex-direction: column;
+                }
+    .flex-container{
+        flex-direction: column;
+    }
+   .banner-input
+   {
+    grid-template-columns: repeat(1,1fr);
+   }
+   .Popular-tour-section img {
+       width: 100%;
+   }
+   .row{
+  flex-direction: column;
+  gap: 5px;
+  height: auto;
+    align-items: center;
+    margin-top: 10px;
+        margin-bottom: 10px;
+   }
+   .box-container {
+       margin: auto;
+
+   }
+   .box{
+    width: auto;
+    height: auto;
+   }
+   .box p{
+    font-size: 12px;
+   }
+   .card-container {
+       display: grid;
+       grid-template-columns: 1fr;
+   }
+
+   .card {
+    margin-bottom: 5px;
+       width: auto;
+       height: auto;
+   }
+
+   .discount-badge {
+    width: 100px;
+    height: 40px;
+       position: relative;
+       left: 150px;
+       top: -160px;
+   }
+   .discount-badge p{
+    font-size: 10px;
+   }
+   .discount-badge h6 {
+       font-size: 20px;
+   }
 }
