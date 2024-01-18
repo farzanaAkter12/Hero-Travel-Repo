@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&family=Poppins:wght@500&display=swap');
 
 body{
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Mulish', sans-serif;   
+}
+header{
     padding-left: 1.5em;
-    
+}
+main{
+padding-left: 1.5em;
 }
 h1 {
     font-size: 64px;
@@ -14,11 +18,21 @@ h3 {
     font-size: 36px;
     font-weight: 800;
 }
+h6{
+    color: #131318;
+        font-size: 24px;
+        font-weight: 800;
+        margin-top: 0px;
+        margin-bottom: 0px;
+}
 p{
     color: rgba(19, 19, 24, 0.70);
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
+        line-height: 26px;
+        margin-top: 5px;
+        margin-bottom: 0px;
 }
 .primary-color{
     color: #FF5400;
@@ -26,7 +40,7 @@ p{
 .flex-container {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .btn-primary{
@@ -40,6 +54,7 @@ p{
         border: white;
         text-align: center;
         justify-content: center;
+        margin-top: 10px;
 }
 .input-primary{
     color: rgba(19, 19, 24, 0.50);
@@ -124,10 +139,11 @@ nav li a{
 .row{
     display: flex;
    gap: 24px;
-    height: 300px;
+   height: 300px;
+   margin-top: 24px;
    margin-bottom: 24px;
-color: #FFF;
-    text-align: center;
+   color: #FFF;
+
     font-size: 28px;
     font-weight: 800;
     
@@ -135,8 +151,8 @@ color: #FFF;
 .row > div{
     flex: 1;
 }
-.row img{
-    width: 100%;
+.row > div > img{
+width: 100%;
 height: 100%;
 }
 .row h5{
@@ -144,4 +160,130 @@ height: 100%;
    top: 10em;
 }
 
+.box-container{
+    margin: 135px;
 
+}
+.centered-text{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.box{
+    border-radius: 16px;
+    width: 573px;
+        height: 284px;
+        padding: 32px;
+        margin: 10px;
+      
+}
+.box > img{
+    height: 64px;
+    width: 64px;
+   margin-bottom:0px;
+}
+.box1{
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.box2{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+       background: rgba(41, 206, 246, 0.05);
+}
+.box3{
+        border: 1px solid rgba(233, 68, 68, 0.20);
+        background: rgba(233, 68, 68, 0.05);
+}
+.center-flex-container{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    margin-top: 50x;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card{
+    width: 350px;
+    height: 450px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+        background: rgba(190, 186, 186, 0.05);
+}
+.card img{
+    width: 100%;
+border-radius: 8px;
+}
+.fa-star,
+.fa-star-half-stroke {
+    width: 16px;
+    height: 16px;
+    color: gold;
+}
+.hill-section
+{
+    margin-top: 120px;
+    justify-content: center;
+}
+.form-section{
+justify-content: center;
+margin-top: 120px;
+margin-bottom: 100px;
+    gap: 24px;
+    flex: 1;
+}
+.form-section-text{
+    border-radius: 16px;
+        border: 1px solid #FF5400;
+        padding: 40px;
+}
+hr {
+    width: 100%;
+    height: 1px;
+    color: rgb(247, 240, 240);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px;
+}
+.form-section input {
+    background-color: gainsboro;
+    font-family: inherit;
+    width: 100%;
+    height: 32px;
+    border: oldlace;
+    outline: 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+    text-align: left;
+    margin-bottom:15px;
+    display: block;
+}
+.form-section button{
+    width: 100%;
+}
+.discount-box{
+    background-color: #FF5400;
+    border-radius: 16px;
+    width: 324px;
+        height: 120px;
+        transform: rotate(-19.628deg);
+        padding: 50px;
+        position: relative;
+        z-index: 1;
+        left: 2em;
+}
+.discount-box p,h6{
+    color:#FFFFFF;
+}
+footer{
+    width: 100%;
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+}
